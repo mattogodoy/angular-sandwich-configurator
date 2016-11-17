@@ -1,7 +1,7 @@
 angular
   .module('app')
   .component('mainSection', {
-    templateUrl: 'app/components/MainSection.html',
+    templateUrl: 'app/components/mainSection.html',
     controller: MainSection,
     bindings: {
       todos: '=',

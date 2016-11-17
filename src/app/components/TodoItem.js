@@ -1,7 +1,7 @@
 angular
   .module('app')
   .component('todoItem', {
-    templateUrl: 'app/components/TodoItem.html',
+    templateUrl: 'app/components/todoItem.html',
     controller: TodoItem,
     bindings: {
       todo: '<',

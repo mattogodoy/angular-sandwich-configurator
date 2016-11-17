@@ -20,7 +20,7 @@ describe('MainSection component', function () {
   beforeEach(module('app', function ($provide) {
     $provide.factory('mainSection', function () {
       return {
-        templateUrl: 'app/components/MainSection.html'
+        templateUrl: 'app/components/mainSection.html'
       };
     });
   }));

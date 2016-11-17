@@ -1,7 +1,7 @@
 angular
   .module('app')
   .component('app', {
-    templateUrl: 'app/containers/App.html',
+    templateUrl: 'app/containers/app.html',
     controller: App
   });
 

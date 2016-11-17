@@ -2,7 +2,7 @@ describe('TodoItem component', function () {
   beforeEach(module('app', function ($provide) {
     $provide.factory('todoItem', function () {
       return {
-        templateUrl: 'app/components/TodoItem.html'
+        templateUrl: 'app/components/todoItem.html'
       };
     });
   }));

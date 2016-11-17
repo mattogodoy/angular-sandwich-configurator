@@ -1,7 +1,7 @@
 angular
   .module('app')
   .component('todoTextInput', {
-    templateUrl: 'app/components/TodoTextInput.html',
+    templateUrl: 'app/components/todoTextInput.html',
     controller: TodoTextInput,
     bindings: {
       onSave: '&',
