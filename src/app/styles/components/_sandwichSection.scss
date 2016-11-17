@@ -1,9 +1,9 @@
 .header{
-  height: 150px;
+  height: $header-height;
   background: red;
 }
 .nested{
-  height: calc(100vh - 150px - 300px);
+  height: calc(100vh - 150px - #{$header-height});
   div{
     height:100%;
   }
