@@ -5,7 +5,7 @@ function priceDisplayController() {
 angular
   .module('app')
   .component('priceDisplay', {
-    templateUrl: 'app/components/priceDisplay.html',
+    templateUrl: 'app/components/priceDisplay/priceDisplay.html',
     controller: priceDisplayController
   });
 

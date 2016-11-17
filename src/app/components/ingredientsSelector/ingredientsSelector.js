@@ -5,7 +5,7 @@ function ingredientsSelectorController() {
 angular
   .module('app')
   .component('ingredientsSelector', {
-    templateUrl: 'app/components/ingredientsSelector.html',
+    templateUrl: 'app/components/ingredientsSelector/ingredientsSelector.html',
     controller: ingredientsSelectorController
   });
 
