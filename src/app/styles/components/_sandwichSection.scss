@@ -1,0 +1,9 @@
+.nested{
+  border: $border-style;
+  height: calc(100vh - #{$footer-height} - #{$header-height});
+  overflow-y: scroll;
+  div{
+    @extend %text-center;
+    height: 100%;
+  }
+}
