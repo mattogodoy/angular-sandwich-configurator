@@ -1,2 +1,21 @@
 
-$header-height: 150px;
+//colors
+$black:               #333;
+$white:               #fff;
+$color-primary:           ;
+$color-secondary:         ;
+$color-terciary:          ;
+
+//content
+$border-state:       solid;
+$border-width:       3px;
+$border-style:       $border-state $border-width $black;
+$header-height:      150px;
+$footer-height:      150px;
+
+//grid
+$screen-xs:   320px;
+$screen-sm:   600px;
+$screen-md:   768px;
+$screen-lg:   960px;
+$screen-xlg:  1280px;
