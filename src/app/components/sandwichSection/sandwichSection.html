@@ -1,13 +1,16 @@
-<div 
-  class="component nested ng-isolate-scope" 
-  snapscroll="" 
-  snap-index="nestedSnapIndex" 
-  ng-swipe-up="swipeUp($event)" 
-  ng-swipe-down="swipeDown($event)" 
-  >
-  <div><div class="container"><h2>Step</h2></div></div>
-  <div><div class="container"><h2>Step</h2></div></div>
-  <div><div class="container"><h2>Step</h2></div></div>
-  <div><div class="container"><h2>Step</h2></div></div>
-  <div><div class="container"><h2>Step</h2></div></div>
+<div ng-init="snapIndex=0">
+  <breadcrumb></breadcrumb>
+  <div 
+    class="component nested ng-isolate-scope" 
+    snapscroll="" 
+    snap-index="snapIndex" 
+    after-snap="beforeCallback(snapIndex)" 
+    snap-duration="300"
+    >
+    <div><div class="container"><h2>Step 1</h2></div></div>
+    <div><div class="container"><h2>Step 2</h2></div></div>
+    <div><div class="container"><h2>Step 3</h2></div></div>
+    <div><div class="container"><h2>Step 4</h2></div></div>
+    <div><div class="container"><h2>Step 5</h2></div></div>
+  </div>
 </div>
