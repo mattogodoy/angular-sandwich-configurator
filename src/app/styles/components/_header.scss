@@ -1,21 +1,18 @@
 .header{
   border: $border-style;
   background: $white;
+  > div{
+    display: flex;
+    flex-flow:wrap column;
+    align-items: center;
+    margin:auto;
+  }
   // height: $header-height;
-
-  nav{
-    ul{
-      display: flex;
-      justify-content: flex-start;
-      li{
-        margin: 5px;
-        border: $border-style;
-        >a{
-          display: block;
-          padding: 9px;
-          @extend %text-center;
-        }
-      }
+  h1{
+    i{
+      @extend .fi;
+      @extend .flaticon-cheeseburger;
+      &:before{color: $color-secondary;font-size: 4rem;}
     }
   }
 }

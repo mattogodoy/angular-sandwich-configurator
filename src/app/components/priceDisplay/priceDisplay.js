@@ -1,5 +1,11 @@
-function priceDisplayController() {
-  this.text = 'My brand new component!';
+function priceDisplayController($scope) {
+  this.text = 'This is your price!';
+  this.price = 0;
+  var that = this;
+  $scope.calculatePrice = function () {
+    console.log('HERE I AM');
+    that.price ++;
+  }
 }
 
 angular

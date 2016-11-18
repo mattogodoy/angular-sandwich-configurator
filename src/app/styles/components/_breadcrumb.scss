@@ -1,7 +1,6 @@
 breadcrumb {
   text-align: center;
-
-  &.active {
+  .active {
     color: red;
   }
 }
