@@ -1,6 +1,54 @@
 breadcrumb {
   text-align: center;
-  .active {
-    color: red;
+  display: flex;
+  justify-content:center;
+  .breadcrumb-selection{
+    display:flex;
+    margin: 20px 0 ;
+    .step{
+      @extend %text-center;
+      width: 7rem;
+      height: 7rem;
+      margin: 0 .5rem;
+      opacity: .4;
+      @include mq(sm,min){
+        width: 8rem;
+        height: 8rem;
+        margin: 0 2rem;
+      }
+      &.active{opacity: 1;}
+    }
+    figure{
+      height: 100%;
+      position: relative;
+      margin-bottom: 0;
+    &:before {
+      content: "";
+      background: rgba(0,0,0,.3);
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      border-radius: 50%; 
+      }
+    }
+    div{width: 100%; height:100%;border-radius: 50%; }
+    .title{
+      color:white;
+      font-family: $font-titles;
+      font-weight: bold;
+      font-size: 1.6rem;
+      position: absolute;
+      top: 0; 
+      bottom:0;
+      margin: auto;
+      left:0; 
+      right:0;
+      height:2.9rem;
+      @include mq(sm,min){
+        font-size: 2.5rem;
+        height:3.9rem;
+      }
+    }  
   }
 }

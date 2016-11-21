@@ -1,8 +1,46 @@
 <div class="component">
   <!-- <h2>{{$ctrl.text}}</h2> -->
-  <a href="#0" ng-click="$parent.snapIndex=0"><span ng-class="{active: $parent.snapIndex == 0}" class="breadcrumb">1</span></a>
-  <a href="#1" ng-click="$parent.snapIndex=1"><span ng-class="{active: $parent.snapIndex == 1}" class="breadcrumb">2</span></a>
-  <a href="#2" ng-click="$parent.snapIndex=2"><span ng-class="{active: $parent.snapIndex == 2}" class="breadcrumb">3</span></a>
-  <a href="#3" ng-click="$parent.snapIndex=3"><span ng-class="{active: $parent.snapIndex == 3}" class="breadcrumb">4</span></a>
-  <a href="#4" ng-click="$parent.snapIndex=4"><span ng-class="{active: $parent.snapIndex == 4}" class="breadcrumb">5</span></a>
+  <div class="breadcrumb-selection">
+  <a href="#0" ng-click="$parent.snapIndex=0">
+    <div class="step" ng-class="{active: $parent.snapIndex == 0}" class="breadcrumb">
+      <figure >
+        <div style="background: url(../app/assets/images/bread.jpg)"></div>
+        <figcaption class="title">Bread</figcaption>
+      </figure>
+    </div>
+  </a>
+  <a href="#1" ng-click="$parent.snapIndex=1">
+    <div class="step" ng-class="{active: $parent.snapIndex == 1}" class="breadcrumb">
+      <figure >
+        <div style="background: url(../app/assets/images/chicken.jpg)" alt="" ></div>
+        <figcaption class="title">Main</figcaption>
+      </figure>
+    </div>
+  </a>
+  <a href="#2" ng-click="$parent.snapIndex=2">
+    <div class="step" ng-class="{active: $parent.snapIndex == 2}" class="breadcrumb">  
+      <figure >
+        <div style="background: url(../app/assets/images/salad.jpg)" alt=""></div>
+        <figcaption class="title">Extras</figcaption>
+      </figure>
+    </div>
+  </a>
+  <a href="#3" ng-click="$parent.snapIndex=3">
+    <div class="step" ng-class="{active: $parent.snapIndex == 3}" class="breadcrumb">
+      <figure >
+        <div style="background: url(../app/assets/images/sauce.jpg)" alt=""></div>
+        <figcaption class="title">Sauces</figcaption>
+      </figure>
+    </div>
+  </a>
+  <a href="#4" ng-click="$parent.snapIndex=4">
+    <div class="step" ng-class="{active: $parent.snapIndex == 4}" class="breadcrumb">
+      <figure >
+        <div style="background: black" alt=""></div>
+        <figcaption class="title">Pay</figcaption>
+      </figure>
+    </div>
+  </a>
+
+  </div>
 </div>

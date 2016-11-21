@@ -1,18 +1,58 @@
 .header{
-  border: $border-style;
-  background: $white;
-  > div{
-    display: flex;
-    flex-flow:wrap column;
+  background: url('../app/assets/images/wood.jpg');
+  height: $header-height;
+  color: $white;
+  font-family: $font-titles;
+  > div {
+    display:flex;
     align-items: center;
-    margin:auto;
+    justify-content: space-around;
+    height:100%;
+    width: 100%;
+    > div { padding: 0 2rem;}
   }
-  // height: $header-height;
-  h1{
-    i{
+}
+
+.header-logo{
+  .title{
+    color: white;
+    display: flex;
+    font-weight: 100;
+    flex-flow: row wrap;      
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    
+    i{margin-right: 20px;
       @extend .fi;
       @extend .flaticon-cheeseburger;
-      &:before{color: $color-secondary;font-size: 4rem;}
+      &:before{
+        font-size: 5rem;
+      }
     }
   }
+}
+
+.header-menu{
+  flex-grow: 1;
+  width: auto;
+  ul,li{margin-bottom: 0;}
+  a{
+    color:white;
+    line-height: 10px;
+    border-bottom: dashed 2px white;
+  }
+}
+
+
+.header-price{
+  margin: 0 2rem;
+  border: dashed 2px white;
+  font-family: $font-body;
+  p{
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 0;  
+  }
+  
 }
