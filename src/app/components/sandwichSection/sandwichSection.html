@@ -1,10 +1,10 @@
 <div ng-init="snapIndex=0">
   <breadcrumb></breadcrumb>
   <div 
-    class="component nested ng-isolate-scope" 
+    class="component nested" 
     snapscroll="" 
     snap-index="snapIndex" 
-    after-snap="beforeCallback(snapIndex)" 
+    after-snap="indexChanged(snapIndex)" 
     snap-duration="300"
     >
     <div>
