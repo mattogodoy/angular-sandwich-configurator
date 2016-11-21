@@ -1,0 +1,21 @@
+//-- Media queries 
+@mixin mq($breakpoint,$m:max) {
+ //-Don't forget to set your width variable values. 
+ $mq-xs: "(#{$m}-width: #{$screen-xs})"; 
+ $mq-sm: "(#{$m}-width: #{$screen-sm})"; 
+ $mq-md: "(#{$m}-width: #{$screen-md})";  
+ $mq-lg: "(#{$m}-width: #{$screen-lg})"; 
+
+  @if $breakpoint == xs { 
+    @media #{$mq-xs} { @content; } 
+  } 
+  @else if $breakpoint == sm { 
+    @media #{$mq-sm} { @content; } 
+  } 
+  @else if $breakpoint == md { 
+    @media #{$mq-md} { @content; } 
+  } 
+  @else if $breakpoint == lg { 
+    @media #{$mq-lg} { @content; } 
+  } 
+} 
