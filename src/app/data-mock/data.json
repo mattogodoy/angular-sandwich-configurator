@@ -1,0 +1,26 @@
+{
+  "ingredients": {
+    "breads": [
+      {
+        "name": "White Bread",
+        "price": 1,
+        "image": "https://placehold.it/150x150"
+      },
+      {
+        "name": "Wheat Bread",
+        "price": 1,
+        "image": "https://placehold.it/150x150"
+      },
+      {
+        "name": "Whole grain Bread",
+        "price": 1,
+        "image": "https://placehold.it/150x150"
+      },
+      {
+        "name": "Rye Bread",
+        "price": 1,
+        "image": "https://placehold.it/150x150"
+      },
+    ]
+  }
+}

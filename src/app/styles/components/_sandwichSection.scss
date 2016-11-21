@@ -2,8 +2,9 @@
   border: $border-style;
   height: calc(100vh - #{$footer-height} - #{$header-height});
   overflow-y: scroll;
-  div{
+  .slide{
     @extend %text-center;
     height: 100%;
+    display: block;
   }
 }

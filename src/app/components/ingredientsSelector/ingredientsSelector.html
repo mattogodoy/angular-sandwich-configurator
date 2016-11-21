@@ -1,3 +1,14 @@
-<div class="component">
-  <h2>{{$ctrl.text}}</h2>
+<div class="slide ingredients-selector u-full-width">
+  <div class="row">
+    <div class="twelve column">
+      <h3 class="u-pull-left">{{$ctrl.title}}</h3>
+    </div>
+  </div>
+  <div class="row ingredients-container">
+    <div class="three columns ingredient" ng-class="{selected: bread.active}" ng-click="$ctrl.toggleItem(bread)" ng-repeat="bread in $ctrl.breads">
+      <img class="ingredient--image" ng-src="{{bread.image}}" alt="{{bread.name}}" />
+      <p class="ingredient--name">{{bread.name}}</p>
+      <p class="ingredient--price">{{bread.price | currency:'€'}}</p>
+    </div>
+  </div>
 </div>

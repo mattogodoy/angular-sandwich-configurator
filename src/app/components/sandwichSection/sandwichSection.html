@@ -1,25 +1,25 @@
 <div ng-init="snapIndex=0">
   <breadcrumb></breadcrumb>
-  <div 
-    class="component nested ng-isolate-scope" 
-    snapscroll="" 
-    snap-index="snapIndex" 
-    after-snap="beforeCallback(snapIndex)" 
+  <div
+    class="component nested ng-isolate-scope"
+    snapscroll=""
+    snap-index="snapIndex"
+    after-snap="beforeCallback(snapIndex)"
     snap-duration="300"
     >
-    <div>
-      <bread-step></bread-step>
+    <div class="slide">
+      <ingredients-selector multi-select="true" selected-items="[]"></ingredients-selector>
     </div>
-    <div>
-      <main-ingredient-step></main-ingredient-step>
+    <div class="slide">
+      <ingredients-selector multi-select="false" selected-items="[]"></ingredients-selector>
     </div>
-    <div>
-      <extra-ingredients-step></extra-ingredient-step>
+    <div class="slide">
+      <ingredients-selector multi-select="true" selected-items="[]"></ingredients-selector>
     </div>
-    <div>
-      <sauce-step></sauce-step>
+    <div class="slide">
+      <ingredients-selector multi-select="false" selected-items="[]"></ingredients-selector>
     </div>
-    <div>
+    <div class="slide">
       <payment-step></payment-step>
     </div>
   </div>
