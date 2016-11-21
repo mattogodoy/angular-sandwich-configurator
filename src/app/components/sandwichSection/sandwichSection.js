@@ -1,13 +1,8 @@
-function sandwichSectionController($scope) {
+function sandwichSectionController($scope, $log) {
   this.text = 'My brand new component!';
-  console.log('init sandwichSection');
 
-  var swipeUp = function (event) {
-    console.log('hola!', event);
-  };
-
-  $scope.beforeCallback = function (index) {
-    console.log('hola!', index);
+  $scope.indexChanged = function (index) {
+    $scope.$emit('stepChange', index); // This sends a message to the parent (app.js)
   };
 }
 
@@ -17,4 +12,3 @@ angular
     templateUrl: 'app/components/sandwichSection/sandwichSection.html',
     controller: sandwichSectionController
   });
-

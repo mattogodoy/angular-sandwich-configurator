@@ -1,4 +1,4 @@
-function breadcrumbController() {
+function breadcrumbController($scope) {
   this.text = 'My brand new component!';
 }
 
