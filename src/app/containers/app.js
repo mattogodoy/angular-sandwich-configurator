@@ -6,13 +6,16 @@ angular
   });
 
 function App($scope, $log) {
-  this.todos = [initialTodo];
-  this.filter = SHOW_ALL;
+  let self = this;
+  this.order = {
+    bread: [],
+    main: [],
+    extra: [],
+    sauces: []
+  };
 
-  // This receives a message from a child (sandwichSection.js)
-  $scope.$on('stepChange', function (e, index) {
-    $log.log('Current step:', index);
-
-    $scope.$broadcast('addToPrice', index); // This sends a message to a child (priceDisplay.js)
+  $scope.$on('ingredientChange', function (e, type, ingredient) {
+    self.order[type] = ingredient;
+    $scope.$broadcast('priceChange', self.order);
   });
 }

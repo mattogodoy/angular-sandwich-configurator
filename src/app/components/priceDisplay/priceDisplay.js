@@ -1,18 +1,24 @@
 function priceDisplayController($scope, $log) {
-  this.text = 'This is your price!';
+  var self = this;
+  this.$log = $log;
   this.price = 0;
-  var that = this;
-
-  $scope.calculatePrice = function () {
-    that.price ++;
-  };
 
   // This receives a message from the parent (app.js)
-  $scope.$on('addToPrice', function (e, price) {
-    that.price += price;
-    $log.log('Price changed:', that.price);
+  $scope.$on('priceChange', function (e, order) {
+    self.calculatePrice(order);
   });
 }
+priceDisplayController.prototype = {
+  calculatePrice: function (order) {
+    this.$log.debug('Selection changed:', order);
+    this.price = 0;
+    Object.keys(order).forEach((key, index) => {
+      order[key].forEach(item => {
+        this.price += item.price;
+      });
+    });
+  }
+};
 
 angular
   .module('app')

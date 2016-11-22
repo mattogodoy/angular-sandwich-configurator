@@ -1,9 +1,13 @@
-function sandwichSectionController($scope, $log) {
-  this.text = 'My brand new component!';
+function sandwichSectionController($scope, $log, Ingredients) {
+  this.$log = $log;
+  this.$scope = $scope;
+  this.data = [];
 
-  $scope.indexChanged = function (index) {
-    $scope.$emit('stepChange', index); // This sends a message to the parent (app.js)
-  };
+  Ingredients.get()
+    .then(response => {
+      this.data = response.data;
+      this.$log.debug('DATA: ', this.data);
+    });
 }
 
 angular
