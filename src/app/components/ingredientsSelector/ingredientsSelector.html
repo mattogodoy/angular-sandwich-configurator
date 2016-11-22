@@ -1,11 +1,11 @@
 <div class="slide ingredients-selector u-full-width">
   <div class="row">
     <div class="twelve column">
-      <h3 class="u-pull-left">{{$ctrl.title}}</h3>
+      <h3 class="u-pull-left">{{$ctrl.label}}</h3>
     </div>
   </div>
   <div class="row ingredients-container">
-    <div class="ingredient" ng-class="{selected: bread.active}" ng-click="$ctrl.toggleItem(bread)" ng-repeat="bread in $ctrl.breads">
+    <div class="ingredient" ng-class="{selected: bread.active}" ng-click="$ctrl.toggleItem(bread)" ng-repeat="bread in $ctrl.ingredients">
       <img class="ingredient--image" ng-src="{{bread.image}}" alt="{{bread.name}}" />
       <p class="ingredient--name">{{bread.name}}</p>
       <p class="ingredient--price">{{bread.price | currency:'€'}}</p>
