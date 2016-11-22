@@ -8,12 +8,7 @@ function sandwichSectionController($scope, $log, Ingredients) {
       this.data = response.data;
       this.$log.debug('DATA: ', this.data);
     });
-
 }
-
-sandwichSectionController.prototype = {
-
-};
 
 angular
   .module('app')

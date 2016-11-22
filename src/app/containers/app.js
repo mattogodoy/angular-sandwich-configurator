@@ -12,7 +12,7 @@ function App($scope, $log) {
     main: [],
     extra: [],
     sauces: []
-  }
+  };
 
   $scope.$on('ingredientChange', function (e, type, ingredient) {
     self.order[type] = ingredient;
