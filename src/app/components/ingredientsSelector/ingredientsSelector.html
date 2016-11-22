@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="row ingredients-container">
-    <div class="three columns ingredient" ng-class="{selected: bread.active}" ng-click="$ctrl.toggleItem(bread)" ng-repeat="bread in $ctrl.ingredients">
+    <div class="ingredient" ng-class="{selected: bread.active}" ng-click="$ctrl.toggleItem(bread)" ng-repeat="bread in $ctrl.ingredients">
       <img class="ingredient--image" ng-src="{{bread.image}}" alt="{{bread.name}}" />
       <p class="ingredient--name">{{bread.name}}</p>
       <p class="ingredient--price">{{bread.price | currency:'€'}}</p>
