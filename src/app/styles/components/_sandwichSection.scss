@@ -1,10 +1,12 @@
 .nested{
-  border: $border-style;
   height: calc(100vh - #{$footer-height} - #{$header-height});
   overflow-y: scroll;
   .slide{
     @extend %text-center;
     height: 100%;
-    display: block;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content:center;
+    align-items:center;
   }
 }
