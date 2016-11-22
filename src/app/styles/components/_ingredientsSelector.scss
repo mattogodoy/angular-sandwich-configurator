@@ -1,20 +1,32 @@
 
 .ingredients-selector {
-  position: relative;
-  z-index:2;
-  padding: 2rem;
   color: $white;
   font-family: $font-body;
+  padding: 2rem;
+  position: relative;
+  z-index:2;
   .ingredients-container {
-    margin: 5rem 0;
+    align-content: stretch;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+    @include mq(sm, min){
+      flex-wrap: nowrap;
+      margin: 5rem 0;
+    }
     .ingredient {
-      margin: 0 3rem;
-      text-align: center;
-      padding: 10px;
-      font-family: $font-titles;
-      cursor: pointer;
+      flex: 0 1 40%;
+      @include mq(sm, min){
+        flex: 0 1 auto;
+      }
+      align-self: auto;
       border: $border-width dashed transparent;
+      cursor: pointer;
+      font-family: $font-titles;
+      padding: 10px;
+      text-align: center;
       .ingredient--image {
         border-radius: 50%;
         display: block;
@@ -31,6 +43,19 @@
 }
 .nested > div{
   position: relative;
+  background-size: cover;
+  &:nth-child(1){
+    background-image: url(../app/assets/images/bread2.jpg);  
+  }
+  &:nth-child(2){
+    background-image: url(../app/assets/images/beef.jpg);  
+  }
+  &:nth-child(3){
+    background-image: url(../app/assets/images/lettuce.jpg);  
+  }
+  &:nth-child(4){
+    background-image: url(../app/assets/images/guacamole.jpg);  
+  }
   &:before{
     content:'';
     background: rgba(0,0,0,.2);
@@ -40,17 +65,5 @@
     left: 0;
     bottom: 0;
     margin: 0 auto;
-  }
-  &:nth-child(1){
-    background: url(../app/assets/images/bread2.jpg);
-    background-size: 100%;
-  }
-  &:nth-child(2){
-    background: url(../app/assets/images/beef.jpg);
-    background-size: 100%;
-  }
-  &:nth-child(3){
-    background: url(../app/assets/images/lettuce.jpg);
-    background-size: 100%;
   }
 }
