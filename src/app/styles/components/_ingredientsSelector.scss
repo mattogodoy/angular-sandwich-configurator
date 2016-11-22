@@ -11,7 +11,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 2rem 0;
     @include mq(sm, min){
       flex-wrap: nowrap;
       margin: 5rem 0;
@@ -31,6 +30,10 @@
         border-radius: 50%;
         display: block;
         margin: 0 auto;
+        max-width: 75%;
+        @include mq(sm, min){
+        max-width: 100%;
+        }
       }
       p {
         margin: 0;
@@ -41,7 +44,19 @@
     }
   }
 }
+.slide{
+   
+  }
 .nested > div{
+  @extend %text-center;
+  height: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content:flex-end;
+  @include mq(sm, min){
+    justify-content:center;
+  }
+  align-items:center; 
   position: relative;
   background-size: cover;
   &:nth-child(1){
