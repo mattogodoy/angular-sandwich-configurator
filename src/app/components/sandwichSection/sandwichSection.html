@@ -9,7 +9,11 @@
     snap-index="snapIndex"
     after-snap="$ctrl.indexChanged(snapIndex)"
     snap-duration="300">
-    <div class="slide" ng-repeat="item in $ctrl.data.steps">
+    <div 
+      class="slide" 
+      ng-repeat="item in $ctrl.data.steps" 
+      style="background-image:url({{item.background}})"
+      >
       <ingredients-selector
         label="{{item.label}}"
         multi-select="item.multiSelect"
