@@ -7,7 +7,8 @@ ingredients-selector {
   .ingredients-container {
     align-content: stretch;
     display: flex;
-    flex: wrap row;
+    flex-wrap: wrap;
+    flex-direction:  row;
     justify-content: center;
     @include mq(sm, min) {
       flex-wrap: nowrap;
@@ -22,6 +23,9 @@ ingredients-selector {
     text-align: center;
     flex: 0 1 40%;
     @include mq(sm, min) {flex: 0 1 auto;}
+    &.selected {
+      border: $border-width dashed $white;
+    }
     .ingredient--image {
       border-radius: 50%;
       display: block;
@@ -29,11 +33,14 @@ ingredients-selector {
       max-width: 75%;
       @include mq(sm, min) {max-width: 100%;}
     }
-    p {
-      margin: 0;
+    .ingredient--name{
+      margin-top: 1rem;
+      font-size: 1.6rem;
+      font-family: $font-body;
+      margin-bottom: 0;
     }
-    &.selected {
-      border: $border-width dashed $white;
+    .ingredient--price{
+      font-size: 1.5rem;
     }
   }
 }
