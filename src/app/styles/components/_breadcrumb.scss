@@ -3,7 +3,7 @@ breadcrumb {
   display: flex;
   justify-content:center;
   z-index: 2;
-  @include Hcenter();
+  @extend %Hcenter;
   .breadcrumb-selection{
     display: flex;
     margin: 2rem 0;
@@ -38,7 +38,7 @@ breadcrumb {
       font-size: 1.6rem;
       font-weight: bold;
       height:2.9rem;
-      @include HVcenter();
+      @extend %HVcenter;
       @include mq(sm,min) {
         font-size: 2.5rem;
         height:3.9rem;
