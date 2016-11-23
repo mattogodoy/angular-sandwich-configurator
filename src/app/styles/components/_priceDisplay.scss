@@ -1,2 +1,13 @@
 price-display{
+  display: block;
+  margin: 0 2rem;
+  border: dashed 2px white;
+  font-family: $font-body;
+  width: 10rem;
+  text-align: center;
+  p{
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 0;  
+  }
 }

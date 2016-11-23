@@ -1,4 +1,4 @@
-.header{
+header.header{
   background: url('../app/assets/images/wood2.jpg');
   height: $header-height;
   color: $white;
@@ -11,9 +11,6 @@
     width: 100%;
     > div { padding: 0 2rem;}
   }
-}
-
-.header-logo{
   .title{
     color: white;
     display: flex;
@@ -31,28 +28,16 @@
       }
     }
   }
-}
-
-.header-menu{
-  flex-grow: 1;
-  width: auto;
-  ul,li{margin-bottom: 0;}
-  a{
-    color:white;
-    line-height: 10px;
-    border-bottom: dashed 2px white;
+  .header-menu{
+    flex-grow: 1;
+    width: auto;
+    ul,li{margin-bottom: 0;}
+    a{
+      color:white;
+      line-height: 10px;
+      border-bottom: dashed 2px white;
+    }
   }
 }
 
 
-.header-price{
-  margin: 0 2rem;
-  border: dashed 2px white;
-  font-family: $font-body;
-  p{
-    font-size: 3rem;
-    font-weight: 100;
-    margin-bottom: 0;  
-  }
-  
-}

@@ -1,6 +1,19 @@
-.nested{
-  height: calc(100vh - #{$header-height});
-  overflow-y: scroll;
-  
-  
+sandwich-section{
+  .nested{
+    height: calc(100vh - #{$header-height});
+    // overflow-y: scroll;
+    > .slide{
+      @extend %text-center;
+      padding-top: 12rem;
+      height: 100%;
+      display: flex;
+      flex-flow: wrap column;
+      justify-content: flex-end;
+      @include mq(sm, min) {justify-content: center;}
+      align-items: center; 
+      position: relative;
+      background-size: cover;
+      @include wholeBk($bklayout);
+    } 
+  }
 }

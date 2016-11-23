@@ -3,6 +3,7 @@
     {
       "name": "bread",
       "image": "../app/assets/images/bread.jpg",
+      "background": "../app/assets/images/bread2.jpg",
       "label": "Choose one of these types of bread:",
       "multiSelect": false,
       "ingredients": [
@@ -35,6 +36,7 @@
     {
       "name": "mains",
       "image": "../app/assets/images/chicken.jpg",
+      "background": "../app/assets/images/beef.jpg",
       "label": "Choose one of these types of mains:",
       "multiSelect": false,
       "ingredients": [
@@ -67,6 +69,7 @@
     {
       "name": "extras",
       "image": "../app/assets/images/salad.jpg",
+      "background": "../app/assets/images/lettuce.jpg",
       "label": "Choose one or more of these types of extras:",
       "multiSelect": true,
       "ingredients": [
@@ -99,6 +102,7 @@
     {
       "name": "sauces",
       "image": "../app/assets/images/sauce.jpg",
+      "background": "../app/assets/images/guacamole.jpg",
       "label": "Choose one or more of these types of sauces:",
       "multiSelect": true,
       "ingredients": [

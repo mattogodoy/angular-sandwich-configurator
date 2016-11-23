@@ -34,6 +34,18 @@
     width: 100%;
   }
 }
+@mixin wholeBk($color){
+  &:before {
+    content:'';
+    background: $color;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+}
 
 
 //-- Media queries 
