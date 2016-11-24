@@ -10,9 +10,7 @@ ingredients-selector {
     flex-wrap: wrap;
     flex-direction:  row;
     justify-content: center;
-    @include mq(sm, min) {
-      flex-wrap: nowrap;
-    }
+    @include mq(sm, min) {flex-wrap: nowrap;}
   }
   .ingredient {
     align-self: auto;
@@ -36,8 +34,9 @@ ingredients-selector {
     .ingredient--name{
       margin-top: 1rem;
       font-size: 1.5rem;
-      @include mq(sm, min) {font-size: 2rem;max-width: 100%;}
-      
+      @include mq(sm, min) {
+        font-size: 2rem;max-width: 100%;
+      }
       margin-bottom: 0;
     }
     .ingredient--price{
