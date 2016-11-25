@@ -1,12 +1,19 @@
-.nested{
-  height: calc(100vh - #{$footer-height} - #{$header-height});
-  overflow-y: scroll;
-  .slide{
-    @extend %text-center;
-    height: 100%;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content:center;
-    align-items:center;
+sandwich-section{
+  .nested{
+    height: calc(100vh - #{$header-height});
+    // overflow-y: scroll;
+    > .slide{
+      @extend %text-center;
+      padding-top: 12rem;
+      height: 100%;
+      display: flex;
+      flex-flow: wrap column;
+      justify-content: flex-end;
+      align-items: center; 
+      position: relative;
+      background-size: cover;
+      @include mq(sm, min) {justify-content: center;}
+      @include wholeBk($bklayout);
+    } 
   }
 }

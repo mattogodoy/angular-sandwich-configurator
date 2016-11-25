@@ -1,60 +1,48 @@
 breadcrumb {
-  background: rgba(255,255,255,0.5);
+  background: $wtlayout;
   display: flex;
   justify-content:center;
-  margin: auto;
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
   z-index: 2;
-}
-.breadcrumb-selection{
-  display: flex;
-  margin: 20px 0;
-  .step{
-    @extend %text-center;
-    height: 7rem;
-    margin: 0 .5rem;
-    opacity: .4;
-    width: 7rem;
-    @include mq(sm,min){
-      height: 8rem;
-      margin: 0 2rem;
-      width: 8rem;
+  @extend %Hcenter;
+  .breadcrumb-selection{
+    display: flex;
+    margin: 2rem 0;
+    .step{
+      @extend %text-center;
+      margin: 0 .5rem;
+      opacity: .4;
+      height: $stepSizeXs;
+      width: $stepSizeXs;
+      @include mq(sm,min) {
+        margin: 0 2rem;
+        height: $stepSizeSm;
+        width: $stepSizeSm;
+      }
+      &.active{opacity: 1;}
     }
-    &.active{opacity: 1;}
+    figure{
+      height: 100%;
+      margin-bottom: 0;
+      position: relative;
+      @include circleBk($bklayout);
+    }
+    div{
+      width: 100%; 
+      height:100%;
+      border-radius: 50%; 
+    }
+    .title{
+      color:white;
+      text-transform: capitalize;
+      font-family: $font-titles;
+      font-size: 1.6rem;
+      font-weight: bold;
+      height:2.9rem;
+      @extend %HVcenter;
+      @include mq(sm,min) {
+        font-size: 2.5rem;
+        height:3.9rem;
+      }
+    }  
   }
-  figure{
-    height: 100%;
-    margin-bottom: 0;
-    position: relative;
-  &:before {
-    background: rgba(0,0,0,.3);
-    border-radius: 50%; 
-    content: "";
-    display: block;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    }
-  }
-  div{width: 100%; height:100%;border-radius: 50%; }
-  .title{
-    bottom:0;
-    color:white;
-    font-family: $font-titles;
-    font-size: 1.6rem;
-    font-weight: bold;
-    height:2.9rem;
-    left:0; 
-    margin: auto;
-    position: absolute;
-    right:0;
-    top: 0; 
-    @include mq(sm,min){
-      font-size: 2.5rem;
-      height:3.9rem;
-    }
-  }  
 }

@@ -1,3 +1,32 @@
 .main {
-
+  display: flex;
+  position: relative;
+  justify-content:center;
+  align-items: center;
+  @extend %text-center;
+  height: calc(100vh - #{$header-height});
+  background: url("../app/assets/images/hipster.jpg") no-repeat 50% 50%/cover;
+  i{
+    margin-right: 20px;
+    @extend .fi;
+    @extend .flaticon-cheeseburger;
+    &:before{
+      color:$white;
+      font-size: 15rem;
+      @include mq(sm,min) { font-size: 30rem; }
+    }
+  }
+  a{
+    color:white;
+    font-family: $font-titles;
+    font-size: 5rem;
+    line-height: 1.2;
+    @include mq(sm,min) { font-size: 10rem; }
+    padding-bottom: 1rem;
+    border-bottom: dashed 3px transparent;
+    &:hover{
+      border-bottom: dashed 3px;  
+    }
+  }
+@include wholeBk($bklayout);
 }

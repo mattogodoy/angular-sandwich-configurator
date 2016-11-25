@@ -10,13 +10,17 @@ $white:               #fff;
 $color-primary:       rgb(255,218,68);
 $color-secondary:     rgb(63,51,3);
 $color-terciary:          ;
+$bklayout:            rgba(0,0,0,.3);
+$wtlayout:            rgba(255,255,255,0.5);
 
 //content
-$border-state:       solid;
+$border-state:       dashed;
 $border-width:       3px;
-$border-style:       $border-state $border-width $black;
+$border-style:       $border-state $border-width $white;
 $header-height:      150px;
 $footer-height:      26px;
+$stepSizeSm: 8rem;
+$stepSizeXs: 7rem;
 
 //grid
 $screen-xs:   320px;
@@ -24,3 +28,4 @@ $screen-sm:   600px;
 $screen-md:   768px;
 $screen-lg:   960px;
 $screen-xlg:  1280px;
+
