@@ -25,7 +25,7 @@ header.header{
       @extend .fi;
       @extend .flaticon-cheeseburger;
       &:before{
-        font-size: 5rem;
+        font-size: 7rem;
       }
     }
   }
@@ -36,8 +36,8 @@ header.header{
     a{
       position:relative;
       color:white;
-      line-height: 10px;
-      border-bottom: dashed 2px white;
+      line-height: 1rem;
+      border-bottom: dashed .2rem white;
     }
   }
 }

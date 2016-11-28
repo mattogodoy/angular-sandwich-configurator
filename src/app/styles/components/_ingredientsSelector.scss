@@ -10,9 +10,7 @@ ingredients-selector {
     flex-wrap: wrap;
     flex-direction:  row;
     justify-content: center;
-    @include mq(sm, min) {
-      flex-wrap: nowrap;
-    }
+    @include mq(sm, min) {flex-wrap: nowrap;}
   }
   .ingredient {
     align-self: auto;
@@ -21,26 +19,30 @@ ingredients-selector {
     font-family: $font-titles;
     padding: 10px;
     text-align: center;
-    flex: 0 1 40%;
+    flex: 0 1 45%;
     @include mq(sm, min) {flex: 0 1 auto;}
     &.selected {
-      border: $border-width dashed $white;
+      border: $border-style;
     }
     .ingredient--image {
       border-radius: 50%;
       display: block;
       margin: 0 auto;
-      max-width: 75%;
+      max-width: 50%;
       @include mq(sm, min) {max-width: 100%;}
     }
     .ingredient--name{
       margin-top: 1rem;
-      font-size: 1.6rem;
-      font-family: $font-body;
+      font-size: 1.5rem;
+      @include mq(sm, min) {
+        font-size: 2rem;max-width: 100%;
+      }
       margin-bottom: 0;
     }
     .ingredient--price{
-      font-size: 1.5rem;
+      font-size: 2rem;
+      font-family: $font-body;
+      margin-bottom: 0;
     }
   }
 }
