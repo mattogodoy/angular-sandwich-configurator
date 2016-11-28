@@ -1,41 +1,24 @@
 <div ng-init="snapIndex=0">
-  <breadcrumb></breadcrumb>
+  <breadcrumb 
+    steps="$ctrl.data.steps"
+    current="snapIndex"
+  ></breadcrumb>
   <div
     class="component nested"
     snapscroll=""
     snap-index="snapIndex"
     after-snap="$ctrl.indexChanged(snapIndex)"
     snap-duration="300">
-    <div class="slide">
+    <div 
+      class="slide" 
+      ng-repeat="item in $ctrl.data.steps" 
+      style="background-image:url({{item.background}})"
+      >
       <ingredients-selector
-        ingredients="$ctrl.data.ingredients.breads"
-        label="Choose one of these types of bread:"
-        multi-select="false"
-        ingridient-type="bread">
-      </ingredients-selector>
-    </div>
-    <div class="slide">
-      <ingredients-selector
-       ingredients="$ctrl.data.ingredients.mains"
-       label="Choose one of these types of mains:"
-       multi-select="false"
-       ingridient-type="mains">
-     </ingredients-selector>
-    </div>
-    <div class="slide">
-      <ingredients-selector
-       ingredients="$ctrl.data.ingredients.extras"
-       label="Choose one or more of these types of extras:"
-       multi-select="true"
-       ingridient-type="extras">
-     </ingredients-selector>
-    </div>
-    <div class="slide">
-      <ingredients-selector
-        ingredients="$ctrl.data.ingredients.sauces"
-        label="Choose one or more of these types of sauces:"
-        multi-select="true"
-        ingridient-type="sauces">
+        label="{{item.label}}"
+        multi-select="item.multiSelect"
+        ingredient-type="{{item.name}}"
+        ingredients="item.ingredients">
       </ingredients-selector>
     </div>
     <div class="slide">

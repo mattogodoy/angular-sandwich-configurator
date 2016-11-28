@@ -1,3 +1,45 @@
+
+// utilities
+
+%text-center{text-align: center;}
+%HVcenter{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom:0;
+  margin: auto;
+}
+%Hcenter{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+%Vcenter{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@mixin circleBk($color){
+  &:before {
+    content:'';
+    border-radius: $border-radius-full; 
+    background: $color;
+    @extend %HVcenter;
+  }
+}
+
+@mixin wholeBk($color){
+  &:before {
+    content:'';
+    background: $color;
+    @extend %HVcenter;
+  }
+}
+
 //-- Media queries 
 @mixin mq($breakpoint,$m:max) {
  //-Don't forget to set your width variable values. 

@@ -1,108 +1,136 @@
 {
-  "ingredients": {
-    "breads": [
-      {
-        "id": 1,
-        "name": "White Bread",
-        "price": 1,
-        "image": "https://placehold.it/150x150"
-      },
-      {
-        "id": 2,
-        "name": "Wheat Bread",
-        "price": 2,
-        "image": "https://placehold.it/150x150"
-      },
-      {
-        "id": 3,
-        "name": "Whole grain Bread",
-        "price": 1.5,
-        "image": "https://placehold.it/150x150"
-      },
-      {
-        "id": 4,
-        "name": "Rye Bread",
-        "price": 1.5,
-        "image": "https://placehold.it/150x150"
-      }
-    ],
-    "mains": [
-      {
-        "id": 1,
-        "name": "Beef",
-        "price": 5,
-        "image": "https://placehold.it/150x150"
-      },
-      {
-        "id": 2,
-        "name": "Pork",
-        "price": 4,
-        "image": "https://placehold.it/150x150"
-      },
-      {
-        "id": 3,
-        "name": "Chicken",
-        "price": 3,
-        "image": "https://placehold.it/150x150"
-      },
-      {
-        "id": 4,
-        "name": "Turkey",
-        "price": 3,
-        "image": "https://placehold.it/150x150"
-      }
-    ],
-    "extras": [
-      {
-        "id": 1,
-        "name": "Salad",
-        "price": 1,
-        "image": "https://placehold.it/150x150"
-      },
-      {
-        "id": 2,
-        "name": "Tomato",
-        "price": 1,
-        "image": "https://placehold.it/150x150"
-      },
-      {
-        "id": 3,
-        "name": "Cheese",
-        "price": 3,
-        "image": "https://placehold.it/150x150"
-      },
-      {
-        "id": 4,
-        "name": "Onion",
-        "price": 3,
-        "image": "https://placehold.it/150x150"
-      }
-    ],
-    "sauces": [
-      {
-        "id": 1,
-        "name": "Mayo",
-        "price": 0.5,
-        "image": "https://placehold.it/150x150"
-      },
-      {
-        "id": 2,
-        "name": "Ketchup",
-        "price": 0.5,
-        "image": "https://placehold.it/150x150"
-      },
-      {
-        "id": 3,
-        "name": "BBQ",
-        "price": 0.5,
-        "image": "https://placehold.it/150x150"
-      },
-      {
-        "id": 4,
-        "name": "Special",
-        "price": 1,
-        "image": "https://placehold.it/150x150"
-      }
-    ]
-  }
+  "steps": [
+    {
+      "name": "bread",
+      "image": "../app/assets/images/bread.jpg",
+      "background": "../app/assets/images/bread2.jpg",
+      "label": "Choose one of these types of bread:",
+      "multiSelect": false,
+      "ingredients": [
+        {
+          "id": 1,
+          "name": "White Bread",
+          "price": 1,
+          "image": "https://placehold.it/150x150"
+        },
+        {
+          "id": 2,
+          "name": "Wheat Bread",
+          "price": 2,
+          "image": "https://placehold.it/150x150"
+        },
+        {
+          "id": 3,
+          "name": "Whole grain Bread",
+          "price": 1.5,
+          "image": "https://placehold.it/150x150"
+        },
+        {
+          "id": 4,
+          "name": "Rye Bread",
+          "price": 1.5,
+          "image": "https://placehold.it/150x150"
+        }
+      ]
+    },
+    {
+      "name": "mains",
+      "image": "../app/assets/images/chicken.jpg",
+      "background": "../app/assets/images/beef.jpg",
+      "label": "Choose one of these types of mains:",
+      "multiSelect": false,
+      "ingredients": [
+        {
+          "id": 1,
+          "name": "Beef",
+          "price": 5,
+          "image": "https://placehold.it/150x150"
+        },
+        {
+          "id": 2,
+          "name": "Pork",
+          "price": 4,
+          "image": "https://placehold.it/150x150"
+        },
+        {
+          "id": 3,
+          "name": "Chicken",
+          "price": 3,
+          "image": "https://placehold.it/150x150"
+        },
+        {
+          "id": 4,
+          "name": "Turkey",
+          "price": 3,
+          "image": "https://placehold.it/150x150"
+        }
+      ]
+    },
+    {
+      "name": "extras",
+      "image": "../app/assets/images/salad.jpg",
+      "background": "../app/assets/images/lettuce.jpg",
+      "label": "Choose one or more of these types of extras:",
+      "multiSelect": true,
+      "ingredients": [
+        {
+          "id": 1,
+          "name": "Salad",
+          "price": 1,
+          "image": "https://placehold.it/150x150"
+        },
+        {
+          "id": 2,
+          "name": "Tomato",
+          "price": 1,
+          "image": "https://placehold.it/150x150"
+        },
+        {
+          "id": 3,
+          "name": "Cheese",
+          "price": 3,
+          "image": "https://placehold.it/150x150"
+        },
+        {
+          "id": 4,
+          "name": "Onion",
+          "price": 3,
+          "image": "https://placehold.it/150x150"
+        }
+      ]
+    },
+    {
+      "name": "sauces",
+      "image": "../app/assets/images/sauce.jpg",
+      "background": "../app/assets/images/guacamole.jpg",
+      "label": "Choose one or more of these types of sauces:",
+      "multiSelect": true,
+      "ingredients": [
+        {
+          "id": 1,
+          "name": "Mayo",
+          "price": 0.5,
+          "image": "https://placehold.it/150x150"
+        },
+        {
+          "id": 2,
+          "name": "Ketchup",
+          "price": 0.5,
+          "image": "https://placehold.it/150x150"
+        },
+        {
+          "id": 3,
+          "name": "BBQ",
+          "price": 0.5,
+          "image": "https://placehold.it/150x150"
+        },
+        {
+          "id": 4,
+          "name": "Special",
+          "price": 1,
+          "image": "https://placehold.it/150x150"
+        }
+      ]
+    }
+  ]
 }
