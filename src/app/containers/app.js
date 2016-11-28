@@ -18,4 +18,8 @@ function App($scope, $log) {
     self.order[type] = ingredient;
     $scope.$broadcast('priceChange', self.order);
   });
+
+  $scope.$on('makeRandom', function (e) {
+    $scope.$broadcast('randomize');
+  });
 }

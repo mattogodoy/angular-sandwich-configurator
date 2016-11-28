@@ -1,12 +1,16 @@
 <header class="header">
 <div class="row container">
   <div class="header-logo">
-    <h1 class="title"><i></i> </h1>
+    <a class="" ui-sref="app.main"><h1 class="title"><i></i> </h1></a>
   </div>
   <div class="header-menu">
-    <nav><ul>
-    <li><a class="" ui-sref="app.main">Home</a></li>
-    <li><a class="" ui-sref="app.sandwich">Make your sandwich</a></li></ul></nav>
+    <nav>
+      <ul>
+        <li><a class="" ui-sref="app.main">Home</a></li>
+        <li><a class="" ui-sref="app.sandwich">Make your sandwich</a></li>
+        <li><a class="" href="javascript:void(0);" ng-click="$ctrl.makeRandom()">Random sandwich</a></li>
+      </ul>
+    </nav>
   </div>
   
   <div class="header-price">

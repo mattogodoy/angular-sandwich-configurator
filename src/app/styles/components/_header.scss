@@ -1,4 +1,6 @@
-.header{
+header.header{
+  position: relative;
+  @include wholeBk($bklayout);
   background: url('../app/assets/images/wood2.jpg');
   height: $header-height;
   color: $white;
@@ -11,9 +13,6 @@
     width: 100%;
     > div { padding: 0 2rem;}
   }
-}
-
-.header-logo{
   .title{
     color: white;
     display: flex;
@@ -22,37 +21,25 @@
     text-transform: uppercase;
     margin-bottom: 0;
     font-size: 2.5rem;
-    
     i{margin-right: 20px;
       @extend .fi;
       @extend .flaticon-cheeseburger;
       &:before{
-        font-size: 5rem;
+        font-size: 7rem;
       }
+    }
+  }
+  .header-menu{
+    flex-grow: 1;
+    width: auto;
+    ul,li{margin-bottom: 0;}
+    a{
+      position:relative;
+      color:white;
+      line-height: 1rem;
+      border-bottom: dashed .2rem white;
     }
   }
 }
 
-.header-menu{
-  flex-grow: 1;
-  width: auto;
-  ul,li{margin-bottom: 0;}
-  a{
-    color:white;
-    line-height: 10px;
-    border-bottom: dashed 2px white;
-  }
-}
 
-
-.header-price{
-  margin: 0 2rem;
-  border: dashed 2px white;
-  font-family: $font-body;
-  p{
-    font-size: 3rem;
-    font-weight: 100;
-    margin-bottom: 0;  
-  }
-  
-}
