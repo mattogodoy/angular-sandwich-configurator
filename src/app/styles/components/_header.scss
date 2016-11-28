@@ -1,4 +1,6 @@
 header.header{
+  position: relative;
+  @include wholeBk($bklayout);
   background: url('../app/assets/images/wood2.jpg');
   height: $header-height;
   color: $white;
@@ -32,6 +34,7 @@ header.header{
     width: auto;
     ul,li{margin-bottom: 0;}
     a{
+      position:relative;
       color:white;
       line-height: 10px;
       border-bottom: dashed 2px white;

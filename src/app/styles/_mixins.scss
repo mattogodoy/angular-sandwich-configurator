@@ -25,25 +25,18 @@
 
 @mixin circleBk($color){
   &:before {
+    content:'';
+    border-radius: $border-radius-full; 
     background: $color;
-    border-radius: 50%; 
-    content: "";
-    display: block;
-    height: 100%;
-    position: absolute;
-    width: 100%;
+    @extend %HVcenter;
   }
 }
+
 @mixin wholeBk($color){
   &:before {
     content:'';
     background: $color;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: 0 auto;
+    @extend %HVcenter;
   }
 }
 

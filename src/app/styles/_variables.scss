@@ -10,13 +10,14 @@ $white:               #fff;
 $color-primary:       rgb(255,218,68);
 $color-secondary:     rgb(63,51,3);
 $color-terciary:          ;
-$bklayout:            rgba(0,0,0,.3);
+$bklayout:            rgba(0,0,0,.2);
 $wtlayout:            rgba(255,255,255,0.5);
 
 //content
 $border-state:       dashed;
 $border-width:       3px;
 $border-style:       $border-state $border-width $white;
+$border-radius-full: 50%;
 $header-height:      150px;
 $footer-height:      26px;
 $stepSizeSm: 8rem;

@@ -29,7 +29,7 @@ breadcrumb {
     div{
       width: 100%; 
       height:100%;
-      border-radius: 50%; 
+      border-radius: $border-radius-full;
     }
     .title{
       color:white;
