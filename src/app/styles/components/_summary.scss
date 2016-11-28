@@ -1,27 +1,62 @@
 *{box-sizing: border-box;}
-
-%text-center{text-align: center;}
-%HVcenter{
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom:0;
-  margin: auto;
-}
-%Hcenter{
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-%Vcenter{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
+  .slide{background: $black;}
 summary {
   width: 90%;
   position: relative;
-}
+  color: $white;
+  .summary-wrapper{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    >div{
+      margin: 0 2rem; 
+      &:nth-child(1){
+        flex-grow:1;
+      }
+      &:nth-child(2){
+        flex-grow:2;
+      }
+    }
+  }
+
+  table{
+    font-family: $font-titles;
+    width: 100%;
+  }
+  tr,td{
+    border:none;
+  }
+  th{
+    border-bottom:$border-style;
+  }
+  th,td{
+    &:first-child{
+      padding-left: 1.5rem;
+      border-right: $border-style;
+    }
+  }
+  form{
+    font-family: $font-titles;
+    .form-group{
+      position: relative;
+    }
+    input.focused{
+      label{
+        position: absolute;
+        left:1rem;
+        top: -1.7rem;
+        background: #292929;
+        padding: .5rem 2rem;
+      }
+    }
+    
+    input[type="text"],
+    input[type="email"]{
+      background-color: transparent;
+      border:$border-style;
+      border-radius: 0;
+      padding: 2rem;
+      margin-bottom: 1rem;
+    }  
+  }  
