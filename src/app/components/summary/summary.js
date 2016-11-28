@@ -1,5 +1,5 @@
 function summaryController() {
-  this.text = 'My brand new component!';
+  
 }
 
 angular
@@ -8,4 +8,3 @@ angular
     templateUrl: 'app/components/summary/summary.html',
     controller: summaryController
   });
-
