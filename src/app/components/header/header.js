@@ -2,21 +2,16 @@ angular
   .module('app')
   .component('headerComponent', {
     templateUrl: 'app/components/header/header.html',
-    controller: Header,
-    bindings: {
-      todos: '='
-    }
+    controller: header
   });
 
 /** @ngInject */
-function Header(todoService) {
-  this.todoService = todoService;
+function header($scope) {
+  this.$scope = $scope;
 }
 
-Header.prototype = {
-  handleSave: function (text) {
-    if (text.length !== 0) {
-      this.todos = this.todoService.addTodo(text, this.todos);
-    }
+header.prototype = {
+  makeRandom: function () {
+    this.$scope.$emit('makeRandom');
   }
 };

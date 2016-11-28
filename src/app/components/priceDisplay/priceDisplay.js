@@ -10,7 +10,6 @@ function priceDisplayController($scope, $log) {
 }
 priceDisplayController.prototype = {
   calculatePrice: function (order) {
-    this.$log.debug('Selection changed:', order);
     this.price = 0;
     Object.keys(order).forEach((key, index) => {
       order[key].forEach(item => {
